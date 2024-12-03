@@ -56,7 +56,7 @@ window.addEventListener("load", function(){
       ul.style.backgroundColor = "white";
       ul.style.margin = "5%";
       ul.style.padding = "10%";
-    
+      ul.style.border = "solid black 3px";
     }
   }
   
@@ -68,7 +68,7 @@ window.addEventListener("load", function(){
     const mergedArray = familyArray.concat(movieArray);
     const favoriteArray = [valueOne, valueTwo, valueThree];
     
-    mergedArray.push("Annie", "Gryffin", "Bear");
+    
     console.log(mergedArray);
 
     appendUL();
@@ -77,7 +77,7 @@ window.addEventListener("load", function(){
       const combinedArray = favoriteArray.concat(slicedArray);
       console.log(slicedArray);
       console.log(combinedArray);
-
+      
       li1.innerText = combinedArray[0];
       li2.innerText = combinedArray[1];
       li3.innerText = combinedArray[2];
