@@ -32,6 +32,11 @@ body {
   padding: 5%;
 }
 
+li {
+  font-size: 175%;
+  font-weight: 900;
+}
+
 .arrayHead {
   font-size: 250%;
   background-color: white;

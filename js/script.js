@@ -1,7 +1,7 @@
 window.addEventListener("load", function(){ 
   const buttonArray = document.getElementById("arrayButton");
-  const parentArray = ["Heather", "Daniel"];
-  const movieArray = ["Ripley", "Rodgers", "Stark"];
+  const familyArray = ["Heather", "Daniel"];
+  const movieArray = ["Ripley", "Stark"];
   const divArray = document.getElementById("arrayBody");
   const h1Body2 = document.getElementById("body-h1");
   const ul = document.createElement("ul");
@@ -56,6 +56,7 @@ window.addEventListener("load", function(){
       ul.style.backgroundColor = "white";
       ul.style.margin = "5%";
       ul.style.padding = "10%";
+    
     }
   }
   
@@ -64,14 +65,18 @@ window.addEventListener("load", function(){
     const valueOne = document.getElementById("arrayValue1").value;
     const valueTwo = document.getElementById("arrayValue2").value;
     const valueThree = document.getElementById("arrayValue3").value;
-    const mergedArray = parentArray.concat(movieArray);
+    const mergedArray = familyArray.concat(movieArray);
     const favoriteArray = [valueOne, valueTwo, valueThree];
     
-    appendUL();
+    mergedArray.push("Annie", "Gryffin", "Bear");
+    console.log(mergedArray);
 
+    appendUL();
     function appendUL() {
       const slicedArray = mergedArray.slice(0, 3);
       const combinedArray = favoriteArray.concat(slicedArray);
+      console.log(slicedArray);
+      console.log(combinedArray);
 
       li1.innerText = combinedArray[0];
       li2.innerText = combinedArray[1];
